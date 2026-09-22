@@ -1,0 +1,83 @@
+﻿@page
+@model KMC.Portfolio.Pages.ContactModel
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section class="page-section">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="section-label">GET IN TOUCH</p>
+            <h1>Contact Me</h1>
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-intro">
+                <h2>Let's Work Together</h2>
+
+                <p>
+                    If you would like to discuss a software project,
+                    collaboration, or professional opportunity, feel free
+                    to get in touch.
+                </p>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <h3>Phone(s)</h3>
+                        <p>+268 79624698</p>
+                        <p>+268 78624698</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>khulanikmc@gmail.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>Location</h3>
+                        <p>Eswatini</p>
+                    </div>
+
+                    <div class="contact-item">
+                         <h3>GitHub</h3>
+                            <p>
+                                <a href="https://github.com/KMC10" target="_blank" rel="noopener noreferrer">
+                                    github.com/KMC10
+                                </a>
+                            </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="contact-form">
+
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                              class="form-control"
+                              rows="6"></textarea>
+                </div>
+
+                <button type="button" class="btn btn-primary">
+                    Send Message
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
