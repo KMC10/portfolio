@@ -53,28 +53,39 @@
             </div>
 
             <div class="contact-form">
-
+               <form method="post">
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" id="name" class="form-control" />
+                    <input type="text" id="name" class="form-control" asp-for="Name" />
+                    <span asp-validation-for="Name"></span>
                 </div>
+                
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" class="form-control" />
+                    <input type="email" id="email" class="form-control" asp-for="Email" />
+                     <span asp-validation-for="Email"></span>
                 </div>
+               
 
                 <div class="form-group">
                     <label for="message">Message</label>
                     <textarea id="message"
                               class="form-control"
-                              rows="6"></textarea>
+                              rows="6" asp-for="Message"></textarea>
+                              <span asp-validation-for="Message"></span>
                 </div>
+                
 
-                <button type="button" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary">
                     Send Message
                 </button>
-
+                @if (ViewData["Message"] != null)
+                    {
+                        <p>@ViewData["Message"]</p>
+                    }
+                    <div asp-validation-summary="ModelOnly"></div>
+               </form>
             </div>
 
         </div>

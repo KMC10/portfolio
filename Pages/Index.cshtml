@@ -5,24 +5,43 @@
 }
 
 <section class="hero">
+
     <div class="hero-content">
-        <p class="hero-intro">Hello, I'm</p>
 
-        ```
-        <h1>Khulani Dlamini</h1>
+        <div class="hero-text">
 
-        <h2>Software Developer</h2>
+            <p class="hero-intro">HELLO, I'M</p>
 
-        <p class="hero-description">
-            I build software applications using C#, .NET, Java, Python,
-            databases, and modern web technologies.
-        </p>
+            <h1>Khulani Dlamini</h1>
 
-        <div class="hero-buttons">
-            <a href="/Projects" class="btn btn-primary">View My Projects</a>
-            <a href="/Contact" class="btn btn-outline-primary">Contact Me</a>
+            <h2>Software Developer</h2>
+
+            <p class="hero-description">
+                I design and develop software applications that solve
+                real-world problems using C#, .NET, Java, Python,
+                databases, and modern web technologies.
+            </p>
+
+            <div class="hero-buttons">
+                <a asp-page="/Projects" class="btn btn-primary">
+                    View My Projects
+                </a>
+
+                <a asp-page="/Contact" class="btn btn-outline-primary">
+                    Contact Me
+                </a>
+            </div>
+
         </div>
+
+        <div class="hero-photo">
+
+             <img src="~/images/profile.JPEG"
+             alt="Khulani Dlamini"
+             class="hero-profile-image" />
+
+        </div>
+
     </div>
-    ```
 
 </section>

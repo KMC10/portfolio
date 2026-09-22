@@ -1,7 +1,14 @@
+using KMC.Portfolio.Configuration;
+using KMC.Portfolio.Services;
+using KMC.Portfolio.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.Configure<SmtpSettings>(
+builder.Configuration.GetSection("Smtp"));
+builder.Services.AddScoped<EmailService>();
 
 var app = builder.Build();
 
